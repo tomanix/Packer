@@ -1,0 +1,123 @@
+2026/04/18 17:16:35 [INFO] Packer version: 1.15.1 [go1.25.8 linux amd64]
+2026/04/18 17:16:35 [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2026/04/18 17:16:35 [INFO] PACKER_CONFIG env var set; attempting to open config file: /home/tomonix/.packerconfig
+2026/04/18 17:16:35 [WARN] Config file doesn't exist: /home/tomonix/.packerconfig
+2026/04/18 17:16:35 [INFO] Setting cache directory: /home/tomonix/.cache/packer
+2026/04/18 17:16:35 [TRACE] listing potential installations for "github.com/hashicorp/proxmox" that match ">= 1.1.8". plugingetter.ListInstallationsOptions{PluginDirectory:"/home/tomonix/.config/packer/plugins", BinaryInstallationOptions:plugingetter.BinaryInstallationOptions{APIVersionMajor:"5", APIVersionMinor:"0", OS:"linux", ARCH:"amd64", Ext:"", Checksummers:[]plugingetter.Checksummer{plugingetter.Checksummer{Type:"sha256", Hash:(*sha256.Digest)(0xc00008a180)}}, ReleasesOnly:false}}
+2026/04/18 17:16:35 [TRACE] Found the following "github.com/hashicorp/proxmox" installations: [{/home/tomonix/.config/packer/plugins/github.com/hashicorp/proxmox/packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 v1.2.3 x5.0}]
+2026/04/18 17:16:35 [INFO] found external [-packer-default-plugin-name- clone iso] builders from proxmox plugin
+2026/04/18 17:16:35 [TRACE] listing potential installations for <nil> that match "". plugingetter.ListInstallationsOptions{PluginDirectory:"/home/tomonix/.config/packer/plugins", BinaryInstallationOptions:plugingetter.BinaryInstallationOptions{APIVersionMajor:"5", APIVersionMinor:"0", OS:"linux", ARCH:"amd64", Ext:"", Checksummers:[]plugingetter.Checksummer{plugingetter.Checksummer{Type:"sha256", Hash:(*sha256.Digest)(0xc00008b180)}}, ReleasesOnly:false}}
+2026/04/18 17:16:35 [INFO] found external [-packer-default-plugin-name- clone iso] builders from proxmox plugin
+2026/04/18 17:16:35 [TRACE] validateValue: not active for proxmox_url, so skipping
+2026/04/18 17:16:35 [TRACE] validateValue: not active for proxmox_node, so skipping
+2026/04/18 17:16:35 [TRACE] validateValue: not active for proxmox_insecure_tls, so skipping
+2026/04/18 17:16:35 [TRACE] validateValue: not active for ssh_private_key_file, so skipping
+2026/04/18 17:16:35 [TRACE] validateValue: not active for vm_name, so skipping
+2026/04/18 17:16:35 [TRACE] validateValue: not active for proxmox_username, so skipping
+2026/04/18 17:16:35 [TRACE] validateValue: not active for proxmox_password, so skipping
+2026/04/18 17:16:35 [TRACE] validateValue: not active for iso_file, so skipping
+2026/04/18 17:16:35 [TRACE] validateValue: not active for ssh_public_key_file, so skipping
+2026/04/18 17:16:35 [TRACE] validateValue: not active for vm_id, so skipping
+2026/04/18 17:16:35 [TRACE] Using protobuf for communication with plugins
+2026/04/18 17:16:35 [INFO] Starting external plugin /home/tomonix/.config/packer/plugins/github.com/hashicorp/proxmox/packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 start builder --protobuf iso
+2026/04/18 17:16:35 Starting plugin: /home/tomonix/.config/packer/plugins/github.com/hashicorp/proxmox/packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 []string{"/home/tomonix/.config/packer/plugins/github.com/hashicorp/proxmox/packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64", "start", "builder", "--protobuf", "iso"}
+2026/04/18 17:16:35 Waiting for RPC address for: /home/tomonix/.config/packer/plugins/github.com/hashicorp/proxmox/packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64
+2026/04/18 17:16:35 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:16:35 Plugin address: unix /tmp/packer-plugin159899006
+2026/04/18 17:16:35 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:16:35 Waiting for connection...
+2026/04/18 17:16:35 Received unix RPC address for /home/tomonix/.config/packer/plugins/github.com/hashicorp/proxmox/packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64: addr is /tmp/packer-plugin159899006
+2026/04/18 17:16:35 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:16:35 Serving a plugin connection...
+2026/04/18 17:16:35 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:16:35 [TRACE] starting builder iso
+2026/04/18 17:16:35 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:16:35 [DEBUG] - common: sending ConfigSpec as protobuf
+2026/04/18 17:16:35 [DEBUG] - common: receiving ConfigSpec as protobuf
+2026/04/18 17:16:35 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:16:35 boot_iso device type not set, using default type 'ide' and index '2'
+2026/04/18 17:16:35 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:16:35 [DEBUG] - common: sending ConfigSpec as protobuf
+2026/04/18 17:16:35 [DEBUG] - common: receiving ConfigSpec as protobuf
+2026/04/18 17:16:35 [INFO] Starting external plugin /usr/bin/packer execute --protobuf packer-provisioner-file
+2026/04/18 17:16:35 Starting plugin: /usr/bin/packer []string{"/usr/bin/packer", "execute", "--protobuf", "packer-provisioner-file"}
+2026/04/18 17:16:35 Waiting for RPC address for: /usr/bin/packer
+2026/04/18 17:16:35 packer-provisioner-file plugin: [INFO] Packer version: 1.15.1 [go1.25.8 linux amd64]
+2026/04/18 17:16:35 packer-provisioner-file plugin: [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2026/04/18 17:16:35 packer-provisioner-file plugin: [INFO] PACKER_CONFIG env var set; attempting to open config file: /home/tomonix/.packerconfig
+2026/04/18 17:16:35 packer-provisioner-file plugin: [WARN] Config file doesn't exist: /home/tomonix/.packerconfig
+2026/04/18 17:16:35 packer-provisioner-file plugin: [INFO] Setting cache directory: /home/tomonix/.cache/packer
+2026/04/18 17:16:35 packer-provisioner-file plugin: Plugin address: unix /tmp/packer-plugin3187415494
+2026/04/18 17:16:35 packer-provisioner-file plugin: Waiting for connection...
+2026/04/18 17:16:35 Received unix RPC address for /usr/bin/packer: addr is /tmp/packer-plugin3187415494
+2026/04/18 17:16:35 packer-provisioner-file plugin: Serving a plugin connection...
+2026/04/18 17:16:35 packer-provisioner-file plugin: [DEBUG] - common: sending ConfigSpec as protobuf
+2026/04/18 17:16:35 [DEBUG] - common: receiving ConfigSpec as protobuf
+2026/04/18 17:16:35 packer-provisioner-file plugin: [DEBUG] - common: sending ConfigSpec as protobuf
+2026/04/18 17:16:35 [DEBUG] - common: receiving ConfigSpec as protobuf
+2026/04/18 17:16:35 [INFO] Starting external plugin /usr/bin/packer execute --protobuf packer-provisioner-shell
+2026/04/18 17:16:35 Starting plugin: /usr/bin/packer []string{"/usr/bin/packer", "execute", "--protobuf", "packer-provisioner-shell"}
+2026/04/18 17:16:35 Waiting for RPC address for: /usr/bin/packer
+2026/04/18 17:16:35 packer-provisioner-shell plugin: [INFO] Packer version: 1.15.1 [go1.25.8 linux amd64]
+2026/04/18 17:16:35 packer-provisioner-shell plugin: [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2026/04/18 17:16:35 packer-provisioner-shell plugin: [INFO] PACKER_CONFIG env var set; attempting to open config file: /home/tomonix/.packerconfig
+2026/04/18 17:16:35 packer-provisioner-shell plugin: [WARN] Config file doesn't exist: /home/tomonix/.packerconfig
+2026/04/18 17:16:35 packer-provisioner-shell plugin: [INFO] Setting cache directory: /home/tomonix/.cache/packer
+2026/04/18 17:16:35 packer-provisioner-shell plugin: Plugin address: unix /tmp/packer-plugin3736098948
+2026/04/18 17:16:35 packer-provisioner-shell plugin: Waiting for connection...
+2026/04/18 17:16:35 Received unix RPC address for /usr/bin/packer: addr is /tmp/packer-plugin3736098948
+2026/04/18 17:16:35 packer-provisioner-shell plugin: Serving a plugin connection...
+2026/04/18 17:16:35 packer-provisioner-shell plugin: [DEBUG] - common: sending ConfigSpec as protobuf
+2026/04/18 17:16:35 [DEBUG] - common: receiving ConfigSpec as protobuf
+2026/04/18 17:16:35 packer-provisioner-shell plugin: [DEBUG] - common: sending ConfigSpec as protobuf
+2026/04/18 17:16:35 [DEBUG] - common: receiving ConfigSpec as protobuf
+2026/04/18 17:16:35 Build debug mode: false
+2026/04/18 17:16:35 Force build: false
+2026/04/18 17:16:35 On error: 
+2026/04/18 17:16:35 Waiting on builds to complete...
+2026/04/18 17:16:35 Starting build run: gold-rocky9-cis2.proxmox-iso.rocky9_cis
+2026/04/18 17:16:35 Running builder: proxmox-iso
+2026/04/18 17:16:35 [INFO] (telemetry) Starting builder proxmox-iso.rocky9_cis
+[1;32mgold-rocky9-cis2.proxmox-iso.rocky9_cis: output will be in this color.[0m
+
+2026/04/18 17:16:35 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:16:35 using password auth
+2026/04/18 17:16:35 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:16:35 No CD files specified. CD disk will not be made.
+2026/04/18 17:16:35 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:16:35 No URLs were provided to Step Download. Continuing...
+2026/04/18 17:16:35 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:16:35 Mapping static assigned ISO to ide2
+2026/04/18 17:16:35 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:16:35 Mapping Disk to scsi0
+[1;32m==> gold-rocky9-cis2.proxmox-iso.rocky9_cis: Creating VM[0m
+[1;32m==> gold-rocky9-cis2.proxmox-iso.rocky9_cis: Starting VM[0m
+2026/04/18 17:16:40 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:16:40 Found available port: 8802 on IP: 0.0.0.0
+[1;32m==> gold-rocky9-cis2.proxmox-iso.rocky9_cis: Starting HTTP server on port 8802[0m
+[1;32m==> gold-rocky9-cis2.proxmox-iso.rocky9_cis: Waiting 15s for boot[0m
+[1;32m==> gold-rocky9-cis2.proxmox-iso.rocky9_cis: Typing the boot command[0m
+2026/04/18 17:16:55 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:16:55 [INFO] Waiting 2s
+2026/04/18 17:16:57 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:16:57 [INFO] Waiting 1s
+2026/04/18 17:16:58 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:16:58 [INFO] Waiting 1s
+[1;32m==> gold-rocky9-cis2.proxmox-iso.rocky9_cis: Using SSH communicator to connect: 192.168.1.110[0m
+2026/04/18 17:16:59 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:16:59 [INFO] Waiting for SSH, up to timeout: 45m0s
+[1;32m==> gold-rocky9-cis2.proxmox-iso.rocky9_cis: Waiting for SSH to become available...[0m
+2026/04/18 17:16:59 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:16:59 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 192.168.1.110:22: connect: connection refused
+2026/04/18 17:17:04 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:17:04 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 192.168.1.110:22: connect: connection refused
+2026/04/18 17:17:10 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:17:10 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 192.168.1.110:22: connect: connection refused
+2026/04/18 17:17:15 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:17:15 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 192.168.1.110:22: connect: connection refused
+2026/04/18 17:17:20 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:17:20 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 192.168.1.110:22: connect: connection refused
+2026/04/18 17:17:25 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:17:25 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 192.168.1.110:22: connect: connection refused
+2026/04/18 17:17:31 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:17:31 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 192.168.1.110:22: connect: connection refused
+2026/04/18 17:17:36 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:17:36 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 192.168.1.110:22: connect: connection refused
+2026/04/18 17:17:41 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:17:41 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 192.168.1.110:22: connect: connection refused
+2026/04/18 17:17:46 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:17:46 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 192.168.1.110:22: connect: connection refused
+2026/04/18 17:17:52 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:17:52 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 192.168.1.110:22: connect: connection refused
+2026/04/18 17:17:57 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:17:57 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 192.168.1.110:22: connect: connection refused
+2026/04/18 17:18:02 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:18:02 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 192.168.1.110:22: connect: connection refused
+2026/04/18 17:18:07 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:18:07 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 192.168.1.110:22: connect: connection refused
+2026/04/18 17:18:12 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:18:12 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 192.168.1.110:22: connect: connection refused
+2026/04/18 17:18:18 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:18:18 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 192.168.1.110:22: connect: connection refused
+2026/04/18 17:18:23 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:18:23 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 192.168.1.110:22: connect: connection refused
+2026/04/18 17:18:28 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:18:28 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 192.168.1.110:22: connect: connection refused
+2026/04/18 17:18:33 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:18:33 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 192.168.1.110:22: connect: connection refused
+2026/04/18 17:18:39 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:18:39 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 192.168.1.110:22: connect: connection refused
+2026/04/18 17:18:44 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:18:44 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 192.168.1.110:22: connect: connection refused
+2026/04/18 17:18:49 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:18:49 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 192.168.1.110:22: connect: connection refused
+2026/04/18 17:18:54 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:18:54 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 192.168.1.110:22: connect: connection refused
+2026/04/18 17:19:00 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:19:00 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 192.168.1.110:22: connect: connection refused
+2026/04/18 17:19:05 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:19:05 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 192.168.1.110:22: connect: connection refused
+2026/04/18 17:19:10 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:19:10 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 192.168.1.110:22: connect: connection refused
+2026/04/18 17:19:15 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:19:15 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 192.168.1.110:22: connect: connection refused
+2026/04/18 17:19:21 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:19:21 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 192.168.1.110:22: connect: connection refused
+2026/04/18 17:19:26 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:19:26 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 192.168.1.110:22: connect: connection refused
+2026/04/18 17:19:31 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:19:31 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 192.168.1.110:22: connect: connection refused
+2026/04/18 17:19:36 packer-plugin-proxmox_v1.2.3_x5.0_linux_amd64 plugin: 2026/04/18 17:19:36 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 192.168.1.110:22: connect: connection refused

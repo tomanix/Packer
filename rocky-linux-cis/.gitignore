@@ -1,0 +1,14 @@
+# Fichiers sensibles
+*.pkrvars.hcl
+!*.pkrvars.hcl.example
+
+# Répertoire Packer
+.packer_cache/
+packer_cache/
+packer-manifest.json
+
+# Clés SSH locales
+*.pem
+*.key
+id_rsa
+id_ed25519
